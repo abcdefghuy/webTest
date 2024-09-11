@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/test")
+//@WebServlet("/test")
 public class Test extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest requset, HttpServletResponse response) throws IOException {
