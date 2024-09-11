@@ -24,9 +24,6 @@ import java.io.*;
 import murach.business.User;
 //import murach.data.UserDB;
 
-
-
-
 public class EmailListServlet extends HttpServlet  {
 
     @Override
@@ -34,7 +31,7 @@ public class EmailListServlet extends HttpServlet  {
                           HttpServletResponse response)
             throws ServletException, IOException {
 
-        String url = "/index.htm";
+        String url = "/index.html";
 
         // get current action
         String action = request.getParameter("action");
