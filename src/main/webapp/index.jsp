@@ -23,8 +23,8 @@
   <label class="pad_top">Last Name:</label>
   <input type="text" name="lastName"
          value="${user.lastName}"><br>
+  <label></label>
   <input type="submit" value="Join Now" class="margin_left">
 </form>
-
 <c:import url="/includes/footer.jsp" />
 
