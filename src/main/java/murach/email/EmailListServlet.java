@@ -10,20 +10,17 @@
 package murach.email;
 
 
-
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.io.*;
-//import javax.servlet.*;
-//import javax.servlet.http.*;
-
 import murach.business.User;
+
+import java.io.IOException;
 //import murach.data.UserDB;
 
+//@WebServlet("/emailList")
 public class EmailListServlet extends HttpServlet  {
 
     @Override
@@ -31,7 +28,7 @@ public class EmailListServlet extends HttpServlet  {
                           HttpServletResponse response)
             throws ServletException, IOException {
 
-        String url = "/index.html";
+        String url = "/index.jsp";
 
         // get current action
         String action = request.getParameter("action");
@@ -41,7 +38,7 @@ public class EmailListServlet extends HttpServlet  {
 
         // perform action and set URL to appropriate page
         if (action.equals("join")) {
-            url = "/index.html";    // the "join" page
+            url = "/index.jsp";    // the "join" page
         }
         else if (action.equals("add")) {
             // get parameters from the request
@@ -75,7 +72,7 @@ public class EmailListServlet extends HttpServlet  {
                 .forward(request, response);
     }
 
-            @Override
+    @Override
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {

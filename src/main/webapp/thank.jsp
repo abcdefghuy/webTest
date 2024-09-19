@@ -1,12 +1,5 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Murach</title>
-    <link rel="stylesheet" href="main.css" type="text/css"/>
-</head>
-
-<body>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:import url="/includes/header.html" />
 <h1>Thanks for joining our email list</h1>
 
 <p>Here is the information that you entered:</p>
@@ -26,5 +19,4 @@
     <input type="submit" value="Return">
 </form>
 
-</body>
-</html>
+<c:import url="/includes/footer.jsp" />
